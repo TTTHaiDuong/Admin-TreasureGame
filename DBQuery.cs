@@ -15,11 +15,27 @@ namespace Admin
         public delegate void SqlError(Exception ex);
 
         public static event SqlError Error;
-        private const string ConnectionString = @"Data source=DUONG\HAIDUONG;Initial Catalog=TREASUREGAME;Integrated Security = True";
+        public const string ConnectionString = @"Data Source=DUONG\HAIDUONG;Initial Catalog=TREASUREGAME;Integrated Security = True;Max Pool Size = 200;";
 
-        public const string QuestionsTableName = "QUESTION";
-        public const string StudentsTableName = "PLAYER";
+        public const string QuestionsTable = "QUESTION";
+        public const string QuestionIdColumn = "ID";
+        public const string QuestionColumn = "QUESTION";
+        public const string QuestionAnswerColumn = "ANSWER";
+        public const string QuestionChoice1Column = "CHOICE1";
+        public const string QuestionChoice2Column = "CHOICE2";
+        public const string QuestionChoice3Column = "CHOICE3";
+
+        public const string StudentTableName = "PLAYER";
+        public const string StudentIdColumn = "STUDENTID";
+        public const string StudentNameColumn = "NAME";
+        public const string StudentScoreColumn = "SCORES";
+        public const string StudentAttendanceColumn = "ATTENDANCE";
+
         public const string AccountsTableName = "ACCOUNT";
+        public const string AccountIdColumn = "STUDENTID";
+        public const string AccountNameColumn = "NAME";
+        public const string AccountEmailColumn = "EMAIL";
+        public const string AccountPasswordColumn = "PASSWORD";
 
         public static DataTable ExecuteQuery(string query)
         {
@@ -34,11 +50,12 @@ namespace Admin
                         con.Open();
                         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                         adapter.Fill(table);
+                        con.Close();
                     }
                 }
                 catch (SqlException ex)
                 {
-                    Error?.Invoke(ex);
+                   // Error?.Invoke(ex);
                 }
                 finally
                 {
@@ -65,6 +82,7 @@ namespace Admin
                         con.Open();
                         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                         adapter.Fill(table);
+                        con.Close();
                     }
                 }
                 catch (SqlException ex)
@@ -90,6 +108,7 @@ namespace Admin
                         cmd.CommandType = CommandType.Text;
                         con.Open();
                         return cmd.ExecuteScalar();
+                        con.Close();
                     }
                 }
                 catch (SqlException ex)

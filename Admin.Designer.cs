@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.QuestionsPage = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -36,28 +38,32 @@
             this.SaveButtonQ = new System.Windows.Forms.Button();
             this.QuestionsDataView = new System.Windows.Forms.DataGridView();
             this.StudentsPage = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ConnectButtonS = new System.Windows.Forms.Button();
-            this.SaveButtonS = new System.Windows.Forms.Button();
             this.StudentsDataView = new System.Windows.Forms.DataGridView();
             this.AccountsPage = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.ConnectButtonA = new System.Windows.Forms.Button();
-            this.SaveButtonA = new System.Windows.Forms.Button();
             this.AccountsDataView = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.StartServerBut = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PlayingTimeTxtBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.GamePasswordTxtBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Tabs.SuspendLayout();
             this.QuestionsPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuestionsDataView)).BeginInit();
             this.StudentsPage.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataView)).BeginInit();
             this.AccountsPage.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AccountsDataView)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tabs
@@ -66,11 +72,11 @@
             this.Tabs.Controls.Add(this.StudentsPage);
             this.Tabs.Controls.Add(this.AccountsPage);
             this.Tabs.Controls.Add(this.tabPage1);
-            this.Tabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Tabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.Tabs.Location = new System.Drawing.Point(0, 0);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
-            this.Tabs.Size = new System.Drawing.Size(1099, 744);
+            this.Tabs.Size = new System.Drawing.Size(1099, 564);
             this.Tabs.TabIndex = 0;
             // 
             // QuestionsPage
@@ -82,7 +88,7 @@
             this.QuestionsPage.Location = new System.Drawing.Point(4, 25);
             this.QuestionsPage.Name = "QuestionsPage";
             this.QuestionsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.QuestionsPage.Size = new System.Drawing.Size(1091, 715);
+            this.QuestionsPage.Size = new System.Drawing.Size(1091, 535);
             this.QuestionsPage.TabIndex = 0;
             this.QuestionsPage.Text = "Questions";
             this.QuestionsPage.UseVisualStyleBackColor = true;
@@ -92,9 +98,9 @@
             this.groupBox2.Controls.Add(this.ConnectButtonQ);
             this.groupBox2.Controls.Add(this.SaveButtonQ);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(60, 600);
+            this.groupBox2.Location = new System.Drawing.Point(60, 569);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(982, 89);
+            this.groupBox2.Size = new System.Drawing.Size(982, 120);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Công cụ";
@@ -103,9 +109,9 @@
             // 
             this.ConnectButtonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnectButtonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ConnectButtonQ.Location = new System.Drawing.Point(256, 40);
+            this.ConnectButtonQ.Location = new System.Drawing.Point(36, 26);
             this.ConnectButtonQ.Name = "ConnectButtonQ";
-            this.ConnectButtonQ.Size = new System.Drawing.Size(136, 40);
+            this.ConnectButtonQ.Size = new System.Drawing.Size(250, 70);
             this.ConnectButtonQ.TabIndex = 9;
             this.ConnectButtonQ.Text = "Kết nối";
             this.ConnectButtonQ.UseVisualStyleBackColor = true;
@@ -115,25 +121,26 @@
             // 
             this.SaveButtonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButtonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SaveButtonQ.Location = new System.Drawing.Point(579, 40);
+            this.SaveButtonQ.Location = new System.Drawing.Point(700, 26);
             this.SaveButtonQ.Name = "SaveButtonQ";
-            this.SaveButtonQ.Size = new System.Drawing.Size(100, 40);
+            this.SaveButtonQ.Size = new System.Drawing.Size(250, 70);
             this.SaveButtonQ.TabIndex = 3;
             this.SaveButtonQ.Text = "Lưu";
             this.SaveButtonQ.UseVisualStyleBackColor = true;
+            this.SaveButtonQ.Click += new System.EventHandler(this.SaveButtonQ_Click);
             // 
             // QuestionsDataView
             // 
             this.QuestionsDataView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.QuestionsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.QuestionsDataView.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.QuestionsDataView.DefaultCellStyle = dataGridViewCellStyle4;
             this.QuestionsDataView.Dock = System.Windows.Forms.DockStyle.Top;
             this.QuestionsDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.QuestionsDataView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -141,149 +148,219 @@
             this.QuestionsDataView.Name = "QuestionsDataView";
             this.QuestionsDataView.RowHeadersWidth = 51;
             this.QuestionsDataView.RowTemplate.Height = 24;
-            this.QuestionsDataView.Size = new System.Drawing.Size(1085, 540);
+            this.QuestionsDataView.Size = new System.Drawing.Size(1085, 510);
             this.QuestionsDataView.TabIndex = 0;
+            this.QuestionsDataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.QuestionsDataView_CellValueChanged);
             // 
             // StudentsPage
             // 
-            this.StudentsPage.Controls.Add(this.groupBox1);
             this.StudentsPage.Controls.Add(this.StudentsDataView);
             this.StudentsPage.Location = new System.Drawing.Point(4, 25);
             this.StudentsPage.Name = "StudentsPage";
             this.StudentsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.StudentsPage.Size = new System.Drawing.Size(1091, 715);
+            this.StudentsPage.Size = new System.Drawing.Size(1091, 535);
             this.StudentsPage.TabIndex = 1;
             this.StudentsPage.Text = "Students";
             this.StudentsPage.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.ConnectButtonS);
-            this.groupBox1.Controls.Add(this.SaveButtonS);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(60, 600);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(982, 89);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Công cụ";
-            // 
-            // ConnectButtonS
-            // 
-            this.ConnectButtonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConnectButtonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ConnectButtonS.Location = new System.Drawing.Point(256, 40);
-            this.ConnectButtonS.Name = "ConnectButtonS";
-            this.ConnectButtonS.Size = new System.Drawing.Size(136, 40);
-            this.ConnectButtonS.TabIndex = 9;
-            this.ConnectButtonS.Text = "Kết nối";
-            this.ConnectButtonS.UseVisualStyleBackColor = true;
-            // 
-            // SaveButtonS
-            // 
-            this.SaveButtonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButtonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SaveButtonS.Location = new System.Drawing.Point(579, 40);
-            this.SaveButtonS.Name = "SaveButtonS";
-            this.SaveButtonS.Size = new System.Drawing.Size(100, 40);
-            this.SaveButtonS.TabIndex = 3;
-            this.SaveButtonS.Text = "Lưu";
-            this.SaveButtonS.UseVisualStyleBackColor = true;
             // 
             // StudentsDataView
             // 
             this.StudentsDataView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.StudentsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentsDataView.DefaultCellStyle = dataGridViewCellStyle5;
             this.StudentsDataView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.StudentsDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.StudentsDataView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StudentsDataView.Location = new System.Drawing.Point(3, 3);
             this.StudentsDataView.Name = "StudentsDataView";
             this.StudentsDataView.RowHeadersWidth = 51;
             this.StudentsDataView.RowTemplate.Height = 24;
-            this.StudentsDataView.Size = new System.Drawing.Size(1085, 540);
-            this.StudentsDataView.TabIndex = 0;
+            this.StudentsDataView.Size = new System.Drawing.Size(1085, 510);
+            this.StudentsDataView.TabIndex = 1;
+            this.StudentsDataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsDataView_CellValueChanged);
             // 
             // AccountsPage
             // 
-            this.AccountsPage.Controls.Add(this.groupBox3);
             this.AccountsPage.Controls.Add(this.AccountsDataView);
             this.AccountsPage.Location = new System.Drawing.Point(4, 25);
             this.AccountsPage.Name = "AccountsPage";
             this.AccountsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AccountsPage.Size = new System.Drawing.Size(1091, 715);
+            this.AccountsPage.Size = new System.Drawing.Size(1091, 535);
             this.AccountsPage.TabIndex = 2;
             this.AccountsPage.Text = "Accounts";
             this.AccountsPage.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.ConnectButtonA);
-            this.groupBox3.Controls.Add(this.SaveButtonA);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(60, 600);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(982, 89);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Công cụ";
-            // 
-            // ConnectButtonA
-            // 
-            this.ConnectButtonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConnectButtonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ConnectButtonA.Location = new System.Drawing.Point(256, 40);
-            this.ConnectButtonA.Name = "ConnectButtonA";
-            this.ConnectButtonA.Size = new System.Drawing.Size(136, 40);
-            this.ConnectButtonA.TabIndex = 9;
-            this.ConnectButtonA.Text = "Kết nối";
-            this.ConnectButtonA.UseVisualStyleBackColor = true;
-            // 
-            // SaveButtonA
-            // 
-            this.SaveButtonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButtonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SaveButtonA.Location = new System.Drawing.Point(579, 40);
-            this.SaveButtonA.Name = "SaveButtonA";
-            this.SaveButtonA.Size = new System.Drawing.Size(100, 40);
-            this.SaveButtonA.TabIndex = 3;
-            this.SaveButtonA.Text = "Lưu";
-            this.SaveButtonA.UseVisualStyleBackColor = true;
             // 
             // AccountsDataView
             // 
             this.AccountsDataView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.AccountsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AccountsDataView.DefaultCellStyle = dataGridViewCellStyle6;
             this.AccountsDataView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AccountsDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.AccountsDataView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AccountsDataView.Location = new System.Drawing.Point(3, 3);
             this.AccountsDataView.Name = "AccountsDataView";
             this.AccountsDataView.RowHeadersWidth = 51;
             this.AccountsDataView.RowTemplate.Height = 24;
-            this.AccountsDataView.Size = new System.Drawing.Size(1085, 540);
-            this.AccountsDataView.TabIndex = 10;
+            this.AccountsDataView.Size = new System.Drawing.Size(1085, 510);
+            this.AccountsDataView.TabIndex = 1;
+            this.AccountsDataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountsDataView_CellValueChanged);
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.StartServerBut);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1091, 715);
+            this.tabPage1.Size = new System.Drawing.Size(1091, 535);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Game Manage";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // StartServerBut
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(224, 150);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 34);
-            this.textBox1.TabIndex = 0;
+            this.StartServerBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartServerBut.Location = new System.Drawing.Point(399, 417);
+            this.StartServerBut.Name = "StartServerBut";
+            this.StartServerBut.Size = new System.Drawing.Size(299, 77);
+            this.StartServerBut.TabIndex = 4;
+            this.StartServerBut.Text = "Bắt đầu máy chủ";
+            this.StartServerBut.UseVisualStyleBackColor = true;
+            this.StartServerBut.Click += new System.EventHandler(this.StartServerBut_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.PlayingTimeTxtBox);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.GamePasswordTxtBox);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(3, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1085, 529);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Các cài đặt trong game";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(206, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(261, 29);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Thời gian phòng game:";
+            // 
+            // PlayingTimeTxtBox
+            // 
+            this.PlayingTimeTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.PlayingTimeTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayingTimeTxtBox.Location = new System.Drawing.Point(508, 241);
+            this.PlayingTimeTxtBox.Name = "PlayingTimeTxtBox";
+            this.PlayingTimeTxtBox.Size = new System.Drawing.Size(195, 34);
+            this.PlayingTimeTxtBox.TabIndex = 1;
+            this.PlayingTimeTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PlayingTimeTxtBox_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(211, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mật khẩu phòng game:";
+            // 
+            // GamePasswordTxtBox
+            // 
+            this.GamePasswordTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.GamePasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GamePasswordTxtBox.Location = new System.Drawing.Point(508, 180);
+            this.GamePasswordTxtBox.Name = "GamePasswordTxtBox";
+            this.GamePasswordTxtBox.Size = new System.Drawing.Size(267, 34);
+            this.GamePasswordTxtBox.TabIndex = 0;
+            this.GamePasswordTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GamePasswordTxtBox_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(726, 244);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 29);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Giây";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 564);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1099, 113);
+            this.panel1.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(906, 28);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 60);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Thoát";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Quit_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(266, 28);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 60);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Lưu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(52, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 60);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Kết nối";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Connect_Click);
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 744);
+            this.ClientSize = new System.Drawing.Size(1099, 677);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Tabs);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -294,13 +371,13 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QuestionsDataView)).EndInit();
             this.StudentsPage.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataView)).EndInit();
             this.AccountsPage.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AccountsDataView)).EndInit();
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -315,15 +392,19 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button SaveButtonQ;
         private System.Windows.Forms.Button ConnectButtonQ;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button ConnectButtonS;
-        private System.Windows.Forms.Button SaveButtonS;
-        private System.Windows.Forms.DataGridView StudentsDataView;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button ConnectButtonA;
-        private System.Windows.Forms.Button SaveButtonA;
-        private System.Windows.Forms.DataGridView AccountsDataView;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox GamePasswordTxtBox;
+        private System.Windows.Forms.TextBox PlayingTimeTxtBox;
+        private System.Windows.Forms.Button StartServerBut;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView StudentsDataView;
+        private System.Windows.Forms.DataGridView AccountsDataView;
     }
 }

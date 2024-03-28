@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|c:\\users\\tranh\\onedrive\\ta\u0300i li\u00EA\u0323u\\desktop application development\\admin\\dbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:dbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\dbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|c:\\users\\tranh\\onedrive\\ta\u0300i li\u00EA\u0323u\\desktop application development\\admin\\dbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:dbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\dbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:dbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B37F4-1427-4E4A-BFD4-E79667A8F54E}|Admin.csproj|solutionrelative:login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DBQuery.cs",
               "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\DBQuery.cs",
               "RelativeDocumentMoniker": "DBQuery.cs",
               "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\DBQuery.cs",
               "RelativeToolTip": "DBQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T18:28:25.933Z",
               "IsPinned": true,
@@ -120,33 +132,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBSet.cs",
-              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\DBSet.cs",
-              "RelativeDocumentMoniker": "DBSet.cs",
-              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\DBSet.cs",
-              "RelativeToolTip": "DBSet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:06:55.926Z",
+              "WhenOpened": "2024-03-22T18:11:55.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Admin.cs",
-              "RelativeDocumentMoniker": "Admin.cs",
-              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Admin.cs",
-              "RelativeToolTip": "Admin.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowBAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T18:55:33.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Admin.cs",
               "RelativeDocumentMoniker": "Admin.cs",
@@ -158,15 +157,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cs",
+              "DocumentIndex": 6,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Admin.cs",
+              "RelativeDocumentMoniker": "Admin.cs",
+              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Admin.cs",
+              "RelativeToolTip": "Admin.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAkwKsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T18:55:33.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Login.Designer.cs",
+              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.Designer.cs",
+              "RelativeToolTip": "Login.Designer.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T21:07:55.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBSet.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\DBSet.cs",
+              "RelativeDocumentMoniker": "DBSet.cs",
+              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\DBSet.cs",
+              "RelativeToolTip": "DBSet.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAYwHIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:06:55.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
+              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T18:11:55.108Z",
+              "WhenOpened": "2024-03-27T21:07:27.427Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\tranh\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Desktop Application Development\\Admin\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T21:15:19.714Z",
               "EditorCaption": ""
             }
           ]

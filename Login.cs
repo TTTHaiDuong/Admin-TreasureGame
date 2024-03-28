@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Admin
@@ -17,9 +10,20 @@ namespace Admin
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Login_Click(object sender, EventArgs e)
         {
+            //string[] lines = File.ReadAllLines(@"C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\TreasureAdmin.txt");
+            //if (lines.Length >= 3 && lines[2] == AdminPassword.Text)
+            //{
+            //    Admin admin = new Admin();
+            //    admin.Show();
+            //}
 
+            if ("admin" == AdminPassword.Text)
+            {
+                Admin admin = new Admin();
+                admin.Show();
+            }
         }
     }
 }
