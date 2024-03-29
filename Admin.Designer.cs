@@ -44,19 +44,20 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.StartServerBut = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.GameLocation = new System.Windows.Forms.TextBox();
-            this.ConnectionStringTxtBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TimeToPlayTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GamePasswordTxtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Access = new System.Windows.Forms.Button();
+            this.ConnectionStringTxtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GameLocation = new System.Windows.Forms.TextBox();
             this.Tabs.SuspendLayout();
             this.QuestionsPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -269,44 +270,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Các cài đặt trong game";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(261, 306);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(206, 29);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Vị trí server game:";
-            // 
-            // GameLocation
-            // 
-            this.GameLocation.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.GameLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GameLocation.Location = new System.Drawing.Point(508, 306);
-            this.GameLocation.Name = "GameLocation";
-            this.GameLocation.Size = new System.Drawing.Size(267, 34);
-            this.GameLocation.TabIndex = 10;
-            // 
-            // ConnectionStringTxtBox
-            // 
-            this.ConnectionStringTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ConnectionStringTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConnectionStringTxtBox.Location = new System.Drawing.Point(508, 119);
-            this.ConnectionStringTxtBox.Name = "ConnectionStringTxtBox";
-            this.ConnectionStringTxtBox.Size = new System.Drawing.Size(267, 34);
-            this.ConnectionStringTxtBox.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(302, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 29);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Chuỗi kết nối: ";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -359,47 +322,97 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_Delete);
+            this.panel1.Controls.Add(this.btn_Exit);
+            this.panel1.Controls.Add(this.btn_Save);
+            this.panel1.Controls.Add(this.btn_Access);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 564);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1099, 113);
             this.panel1.TabIndex = 1;
             // 
-            // button3
+            // btn_Delete
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(906, 28);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 60);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Quit_Click);
+            this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btn_Delete.Location = new System.Drawing.Point(487, 28);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(124, 60);
+            this.btn_Delete.TabIndex = 2;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
-            // button2
+            // btn_Exit
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(266, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Save_Click);
+            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.Location = new System.Drawing.Point(906, 28);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(140, 60);
+            this.btn_Exit.TabIndex = 2;
+            this.btn_Exit.Text = "Thoát";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.Quit_Click);
             // 
-            // button1
+            // btn_Save
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(52, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Kết nối";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Connect_Click);
+            this.btn_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Location = new System.Drawing.Point(266, 28);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(140, 60);
+            this.btn_Save.TabIndex = 1;
+            this.btn_Save.Text = "Lưu";
+            this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // btn_Access
+            // 
+            this.btn_Access.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Access.Location = new System.Drawing.Point(52, 28);
+            this.btn_Access.Name = "btn_Access";
+            this.btn_Access.Size = new System.Drawing.Size(140, 60);
+            this.btn_Access.TabIndex = 0;
+            this.btn_Access.Text = "Kết nối";
+            this.btn_Access.UseVisualStyleBackColor = true;
+            this.btn_Access.Click += new System.EventHandler(this.Connect_Click);
+            // 
+            // ConnectionStringTxtBox
+            // 
+            this.ConnectionStringTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.ConnectionStringTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConnectionStringTxtBox.Location = new System.Drawing.Point(508, 120);
+            this.ConnectionStringTxtBox.Name = "ConnectionStringTxtBox";
+            this.ConnectionStringTxtBox.Size = new System.Drawing.Size(267, 34);
+            this.ConnectionStringTxtBox.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(302, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 29);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Chuỗi kết nối: ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(261, 303);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(206, 29);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Vị trí server game:";
+            // 
+            // GameLocation
+            // 
+            this.GameLocation.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.GameLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameLocation.Location = new System.Drawing.Point(508, 303);
+            this.GameLocation.Name = "GameLocation";
+            this.GameLocation.Size = new System.Drawing.Size(267, 34);
+            this.GameLocation.TabIndex = 12;
             // 
             // Admin
             // 
@@ -447,14 +460,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.Button btn_Access;
+        private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.DataGridView StudentsDataView;
         private System.Windows.Forms.DataGridView AccountsDataView;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox ConnectionStringTxtBox;
+        private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox GameLocation;
+        private System.Windows.Forms.TextBox ConnectionStringTxtBox;
+        private System.Windows.Forms.Label label4;
     }
 }

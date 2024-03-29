@@ -9,3 +9,25 @@ C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\Admin\obj\
 C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\Admin\obj\Debug\Admin.csproj.CoreCompileInputs.cache
 C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\Admin\obj\Debug\Admin.exe
 C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\Admin\obj\Debug\Admin.pdb
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\bin\Debug\Admin.exe.config
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\bin\Debug\Admin.exe
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\bin\Debug\Admin.pdb
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.csproj.AssemblyReference.cache
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.Admin.resources
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.Login.resources
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.Properties.Resources.resources
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.csproj.GenerateResource.cache
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.exe
+C:\Users\ACER\Desktop\Programs\Doan\Admin-TreasureGame\obj\Debug\Admin.pdb
+C:\Users\tranh\Source\Repos\Admin-Page\bin\Debug\Admin.exe.config
+C:\Users\tranh\Source\Repos\Admin-Page\bin\Debug\Admin.exe
+C:\Users\tranh\Source\Repos\Admin-Page\bin\Debug\Admin.pdb
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.csproj.AssemblyReference.cache
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.Admin.resources
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.Login.resources
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.Properties.Resources.resources
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.csproj.GenerateResource.cache
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.exe
+C:\Users\tranh\Source\Repos\Admin-Page\obj\Debug\Admin.pdb

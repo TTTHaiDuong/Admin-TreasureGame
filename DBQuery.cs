@@ -15,7 +15,7 @@ namespace Admin
         public delegate void SqlError(Exception ex);
 
         public static event SqlError Error;
-        public static string ConnectionString = @"Data Source=DUONG\HAIDUONG;Initial Catalog=TREASUREGAME;Integrated Security = True;Max Pool Size = 200;";
+        public const string ConnectionString = @"Data Source=localhost;Initial Catalog=TREASUREGAME;Integrated Security = True;Max Pool Size = 200;";
 
         public const string QuestionsTable = "QUESTION";
         public const string QuestionIdColumn = "ID";
@@ -55,7 +55,7 @@ namespace Admin
                 }
                 catch (SqlException ex)
                 {
-                   Error?.Invoke(ex);
+                   // Error?.Invoke(ex);
                 }
                 finally
                 {

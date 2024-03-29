@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
+//////////
 namespace Admin
 {
     public partial class Admin : Form
@@ -20,6 +22,7 @@ namespace Admin
         }
 
         public static string SettingFilePath = @"C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\TreasureAdmin.txt";
+
         private readonly int ConnectionTime = 1000;
         private bool IsCellsChanged;
 
@@ -102,8 +105,8 @@ namespace Admin
             if (GamePasswordTxtBox.Text == "" || TimeToPlayTxtBox.Text == "" || ConnectionStringTxtBox.Text == "" || GameLocation.Text == "")
             {
                 MessageBox.Show("Không thể để trống các cài đặt!", "Lỗi chưa nhập đầy đủ thông tin cài đặt game!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
+
             WriteSettingGameFile(sender, e);
 
             try
@@ -176,6 +179,7 @@ namespace Admin
             DBSet set = new DBSet();
             set.ErrorSave += CannotSave;
 
+
             if (set.QuestionTableSave(QuestionsDataView)
             && set.StudentTableSave(StudentsDataView)
             && set.AccountTableSave(AccountsDataView))
@@ -188,9 +192,83 @@ namespace Admin
             MessageBox.Show("Dữ liệu được lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+
         private void CannotSave(string message)
         {
             MessageBox.Show(message, "Lỗi khi lưu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            if (QuestionsDataView.SelectedRows.Count > 0)
+            {
+                DeleteSelectedRow(QuestionsDataView, "QUESTION");
+            }
+            else if (StudentsDataView.SelectedRows.Count > 0)
+            {
+                DeleteSelectedRow(StudentsDataView, "PLAYER");
+            }
+            else if (AccountsDataView.SelectedRows.Count > 0)
+            {
+                DeleteSelectedRow(AccountsDataView, "ACCOUNT");
+            }
+        }
+
+        private void DeleteSelectedRow(DataGridView dataGridView, string tableName)
+        {
+            int selectedIndex = dataGridView.SelectedRows[0].Index;
+
+            string idColumnName = dataGridView.Columns[0].Name;
+
+            if (dataGridView.Name == DBQuery.StudentTableName || dataGridView.Name == DBQuery.AccountsTableName)
+            {
+                idColumnName = "STUDENTID";
+            }
+
+            string ID = dataGridView.Rows[selectedIndex].Cells[idColumnName].Value.ToString();
+
+            dataGridView.Rows.RemoveAt(selectedIndex);
+
+
+            if (!string.IsNullOrEmpty(ID))
+            {
+                DeleteFromDatabase(tableName, ID);
+            }
+        }
+
+        private void DeleteFromDatabase(string tableName, string ID)
+        {
+            using (SqlConnection con = new SqlConnection(DBQuery.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                try
+                {
+                    con.Open();
+                    cmd.Connection = con;
+
+                    string deleteQuery;
+                    if (tableName == DBQuery.QuestionsTable)
+                    {
+                        deleteQuery = $"DELETE FROM {tableName} WHERE ID = @ID";
+                    }
+                    else
+                    {
+                        deleteQuery = $"DELETE FROM {tableName} WHERE STUDENTID = @ID";
+                    }
+                    cmd.CommandText = deleteQuery;
+                    cmd.Parameters.AddWithValue("@ID", ID);
+
+                    cmd.ExecuteNonQuery();
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show($"Lỗi SQL! {ex.Message}", "Lỗi SQL!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
         }
 
         private void WriteSettingGameFile(object sender, EventArgs e)
