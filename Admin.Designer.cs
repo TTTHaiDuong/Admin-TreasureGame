@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.QuestionsPage = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -44,8 +44,12 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.StartServerBut = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GameLocation = new System.Windows.Forms.TextBox();
+            this.ConnectionStringTxtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.PlayingTimeTxtBox = new System.Windows.Forms.TextBox();
+            this.TimeToPlayTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GamePasswordTxtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -133,14 +137,14 @@
             // 
             this.QuestionsDataView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.QuestionsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.QuestionsDataView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.QuestionsDataView.DefaultCellStyle = dataGridViewCellStyle1;
             this.QuestionsDataView.Dock = System.Windows.Forms.DockStyle.Top;
             this.QuestionsDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.QuestionsDataView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -167,14 +171,14 @@
             // 
             this.StudentsDataView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.StudentsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentsDataView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentsDataView.DefaultCellStyle = dataGridViewCellStyle2;
             this.StudentsDataView.Dock = System.Windows.Forms.DockStyle.Top;
             this.StudentsDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.StudentsDataView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -201,14 +205,14 @@
             // 
             this.AccountsDataView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.AccountsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AccountsDataView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AccountsDataView.DefaultCellStyle = dataGridViewCellStyle3;
             this.AccountsDataView.Dock = System.Windows.Forms.DockStyle.Top;
             this.AccountsDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.AccountsDataView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -247,8 +251,12 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.GameLocation);
+            this.groupBox4.Controls.Add(this.ConnectionStringTxtBox);
+            this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.PlayingTimeTxtBox);
+            this.groupBox4.Controls.Add(this.TimeToPlayTxtBox);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.GamePasswordTxtBox);
             this.groupBox4.Controls.Add(this.label3);
@@ -261,6 +269,44 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Các cài đặt trong game";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(261, 306);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(206, 29);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Vị trí server game:";
+            // 
+            // GameLocation
+            // 
+            this.GameLocation.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.GameLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameLocation.Location = new System.Drawing.Point(508, 306);
+            this.GameLocation.Name = "GameLocation";
+            this.GameLocation.Size = new System.Drawing.Size(267, 34);
+            this.GameLocation.TabIndex = 10;
+            // 
+            // ConnectionStringTxtBox
+            // 
+            this.ConnectionStringTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.ConnectionStringTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConnectionStringTxtBox.Location = new System.Drawing.Point(508, 119);
+            this.ConnectionStringTxtBox.Name = "ConnectionStringTxtBox";
+            this.ConnectionStringTxtBox.Size = new System.Drawing.Size(267, 34);
+            this.ConnectionStringTxtBox.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(302, 124);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 29);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Chuỗi kết nối: ";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -271,15 +317,15 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Thời gian phòng game:";
             // 
-            // PlayingTimeTxtBox
+            // TimeToPlayTxtBox
             // 
-            this.PlayingTimeTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.PlayingTimeTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayingTimeTxtBox.Location = new System.Drawing.Point(508, 241);
-            this.PlayingTimeTxtBox.Name = "PlayingTimeTxtBox";
-            this.PlayingTimeTxtBox.Size = new System.Drawing.Size(195, 34);
-            this.PlayingTimeTxtBox.TabIndex = 1;
-            this.PlayingTimeTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PlayingTimeTxtBox_KeyPress);
+            this.TimeToPlayTxtBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.TimeToPlayTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeToPlayTxtBox.Location = new System.Drawing.Point(508, 241);
+            this.TimeToPlayTxtBox.Name = "TimeToPlayTxtBox";
+            this.TimeToPlayTxtBox.Size = new System.Drawing.Size(195, 34);
+            this.TimeToPlayTxtBox.TabIndex = 1;
+            this.TimeToPlayTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PlayingTimeTxtBox_KeyPress);
             // 
             // label1
             // 
@@ -394,7 +440,7 @@
         private System.Windows.Forms.Button ConnectButtonQ;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox GamePasswordTxtBox;
-        private System.Windows.Forms.TextBox PlayingTimeTxtBox;
+        private System.Windows.Forms.TextBox TimeToPlayTxtBox;
         private System.Windows.Forms.Button StartServerBut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -406,5 +452,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView StudentsDataView;
         private System.Windows.Forms.DataGridView AccountsDataView;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox ConnectionStringTxtBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox GameLocation;
     }
 }

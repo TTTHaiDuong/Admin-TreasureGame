@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -18,6 +19,7 @@ namespace Admin
             AccountsDataView.ForeColor = System.Drawing.Color.Black;
         }
 
+        public static string SettingFilePath = @"C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\TreasureAdmin.txt";
         private readonly int ConnectionTime = 1000;
         private bool IsCellsChanged;
 
@@ -32,6 +34,7 @@ namespace Admin
             QuestionDBLoad();
             StudentsDBLoad();
             AccountsDBLoad();
+            ReadSettingGameFile();
 
             if (QuestionsDataView.RowCount == 0)
             {
@@ -96,14 +99,21 @@ namespace Admin
 
         private void StartServerBut_Click(object sender, EventArgs e)
         {
-            if (GamePasswordTxtBox.Text == "" || PlayingTimeTxtBox.Text == "")
+            if (GamePasswordTxtBox.Text == "" || TimeToPlayTxtBox.Text == "" || ConnectionStringTxtBox.Text == "" || GameLocation.Text == "")
             {
-                MessageBox.Show("Mật khẩu phòng và thời gian chơi không thể để trống!", "Lỗi chưa nhập đầy đủ thông tin cài đặt game!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không thể để trống các cài đặt!", "Lỗi chưa nhập đầy đủ thông tin cài đặt game!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            WriteSettingGameFile(sender, e);
 
-            string adminConfig = $"{GamePasswordTxtBox.Text}\n{PlayingTimeTxtBox.Text}";
-            File.WriteAllText(@"C:\Users\tranh\OneDrive\Tài liệu\Desktop Application Development\TreasureAdmin.txt", adminConfig);
+            try
+            {
+                Process.Start(GameLocation.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Vị trí của server game không chính xác!", "Lỗi chạy server", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void GamePasswordTxtBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -181,6 +191,35 @@ namespace Admin
         private void CannotSave(string message)
         {
             MessageBox.Show(message, "Lỗi khi lưu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void WriteSettingGameFile(object sender, EventArgs e)
+        {
+            List<string> setting = new List<string>()
+            {
+                "Game Location_____: " + GameLocation.Text,
+                "Room Password_____: " + GamePasswordTxtBox.Text,
+                "Time To Play______: " + TimeToPlayTxtBox.Text,
+                "Connection String_: " + ConnectionStringTxtBox.Text
+            };
+
+            File.WriteAllLines(SettingFilePath, setting.ToArray());
+        }
+
+        private void ReadSettingGameFile()
+        {
+            if (File.Exists(SettingFilePath))
+            {
+                const int len = 21;
+                string[] lines = File.ReadAllLines(SettingFilePath);
+                foreach (string line in lines)
+                {
+                    if (line.Contains("Room Password_____: ")) GamePasswordTxtBox.Text = line.Substring(len, line.Length - len);
+                    else if (line.Contains("Connection String_: ")) ConnectionStringTxtBox.Text = line.Substring(len, line.Length - len);
+                    else if (line.Contains("Time To Play______: ")) TimeToPlayTxtBox.Text = line.Substring(len, line.Length - len);
+                    else if (line.Contains("Game Location_____: ")) GameLocation.Text = line.Substring(len, line.Length - len);
+                }
+            }
         }
     }
 }
